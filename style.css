@@ -1,0 +1,26 @@
+/* 하단 컨트롤 영역 (이전 bottom:20px → bottom:10px, padding 조정) */
+#controls {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15%;      /* 버튼을 양쪽 끝에서 안쪽으로 15% 떨어뜨림 */
+  pointer-events: none;
+}
+
+/* 버튼 크기 키우고 터치 영역 감도 올리기 */
+.control-btn {
+  width: 80px;
+  height: 80px;
+  font-size: 32px;
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  border: none;
+  border-radius: 40px;
+  pointer-events: auto;
+}
+.control-btn:active {
+  background: rgba(255, 255, 255, 0.4);
+}
